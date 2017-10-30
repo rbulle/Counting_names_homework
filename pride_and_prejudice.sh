@@ -3,6 +3,5 @@
 for word in Elizabeth Jane Mary Catherine Lydia
 do
 	echo $word
-	grep -w -i $word Book.txt | wc -l
+	grep -w -i -o $word Book.txt | wc -l
 done
-
